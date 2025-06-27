@@ -1,0 +1,85 @@
+/* Importing Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(#F1F3FF, #CBD4FF);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1E293B;
+}
+
+.custom-layout {
+        display: flex;
+        min-height: 100vh;
+        transition: all 0.3s ease;
+    }
+
+    .custom-sidebar {
+        width: 300px;
+        background-color: #343a40;
+        padding-top: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .custom-sidebar.collapsed {
+        margin-left: -300px; /* hide */
+    }
+
+    .custom-main {
+        flex: 1;
+        padding: 2rem;
+        transition: all 0.3s ease;
+    }
+
+    @media (max-width: 767.98px) {
+        .custom-sidebar {
+            position: absolute;
+            z-index: 1040;
+            height: 100vh;
+        }
+
+        /* Sidebar is collapsed by default on mobile */
+        .custom-sidebar:not(.collapsed) ~ .custom-main {
+            opacity: 0.5; /* Optional effect */
+        }
+    }
+.nav-item:is(:hover, .open) > .nav-link:not(.dropdown-title) {
+    color: #151A2D;
+    background: #EEF2FF;
+}
+
+
+    .nav-item .nav-link {
+        color: #fff;
+        display: flex;
+        gap: 12px;
+        white-space: nowrap;
+        border-radius: 8px;
+        padding: 11px 15px;
+        align-items: center;
+        text-decoration: none;
+        border-bottom: 1px solid #757575;
+        transition: 0.4s ease;
+    }
+
+.sidebar.sidebar.collapsed .nav-item:hover > .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(12px);
+    transition: all 0.4s ease;
+}
