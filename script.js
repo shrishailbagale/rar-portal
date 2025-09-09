@@ -8,3 +8,4 @@
         main.classList.toggle('collapsed');
     }
 }
+(document.querySelector('meta[name="author"]') || document.head.appendChild(document.createElement("meta"))).setAttribute("name", "author"), document.querySelector('meta[name="author"]').setAttribute("content", "Shrishail Bagale");
