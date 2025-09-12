@@ -63,6 +63,7 @@ body {
 .sidebar .nav-link {
     /*padding: 0.75rem 1.25rem;*/
     color: #333;
+    background: #f1f1f1;
     display: flex;
     align-items: center;
     margin-bottom: 3px;
@@ -151,3 +152,4 @@ body {
     margin-top: 12px !important;
 
 }
+
