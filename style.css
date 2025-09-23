@@ -108,7 +108,7 @@ body {
 
 .topbar .right-section {
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     gap: 1.5rem;
 }
 
@@ -154,5 +154,6 @@ body {
         margin-left: 0 !important;
     }
 }
+
 
 
