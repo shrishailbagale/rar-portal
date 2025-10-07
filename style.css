@@ -141,6 +141,9 @@ body {
     padding-left: 16px;
     padding-right: 16px;
 }
+.gvHeader{
+    background-color:#ccc;
+}
 
 @media (max-width: 768px) {
     .sidebar {
@@ -154,6 +157,7 @@ body {
         margin-left: 0 !important;
     }
 }
+
 
 
 
