@@ -141,9 +141,39 @@ body {
     padding-left: 16px;
     padding-right: 16px;
 }
-.gvHeader{
-    background-color:#ccc;
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 10px;
 }
+.custom-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: #fff;
+}
+.custom-grid th {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  white-space: nowrap; 
+}
+.custom-grid td {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+.custom-grid tr:hover {
+  background-color: #f4f9ff;
+}
+
+@media (max-width: 768px) {
+  
+}
+
 
 @media (max-width: 768px) {
     .sidebar {
@@ -156,7 +186,13 @@ body {
     .main {
         margin-left: 0 !important;
     }
+    .custom-grid th,
+   .custom-grid td {
+    font-size: 13px;
+    padding: 6px;
+  }
 }
+
 
 
 
