@@ -169,11 +169,9 @@ body {
 .custom-grid tr:hover {
   background-color: #f4f9ff;
 }
-
-@media (max-width: 768px) {
-  
+.Suggest{
+    min-width: 80px;
 }
-
 
 @media (max-width: 768px) {
     .sidebar {
@@ -192,6 +190,7 @@ body {
     padding: 6px;
   }
 }
+
 
 
 
