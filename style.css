@@ -183,6 +183,7 @@ body {
     }
     .main {
         margin-left: 0 !important;
+        padding: 6px;
     }
     .custom-grid th,
    .custom-grid td {
@@ -190,6 +191,7 @@ body {
     padding: 6px;
   }
 }
+
 
 
 
