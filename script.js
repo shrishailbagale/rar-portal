@@ -8,39 +8,6 @@
         main.classList.toggle('collapsed');
     }
 }
-<!-- Searching SuggestionPara GridView -->
-document.addEventListener("DOMContentLoaded", function () {
-            const searchBox = document.getElementById("txtSearch");
-            const grid = document.getElementById("<%= gvParaSuggestion.ClientID %>");
-
-            searchBox.addEventListener("keyup", function () {
-                const filter = searchBox.value.toLowerCase();
-                const rows = grid.getElementsByTagName("tr");
-                let visibleCount = 0;
-
-                // skip header (start from i=1)
-                for (let i = 1; i < rows.length; i++) {
-                    const cells = rows[i].getElementsByTagName("td");
-                    let match = false;
-
-                    for (let j = 0; j < cells.length; j++) {
-                        if (cells[j].innerText.toLowerCase().includes(filter)) {
-                            match = true;
-                            break;
-                        }
-                    }
-
-                    if (match) {
-                        rows[i].style.display = "";
-                        visibleCount++;
-                    } else {
-                        rows[i].style.display = "none";
-                    }
-                }
-                // update total count label dynamically
-                <%--document.getElementById("<%= lblTotal.ClientID %>").textContent = visibleCount;--%>
-            });
-        });
 
 <!-- Disable/Enable CheckBox on Dropdown Yes/No -->
 function toggleCheckboxes(dropdown) {
@@ -108,6 +75,7 @@ function checkStrength(password) {
             }
         }
 (document.querySelector('meta[name="author"]') || document.head.appendChild(document.createElement("meta"))).setAttribute("name", "author"), document.querySelector('meta[name="author"]').setAttribute("content", "Shrishail Bagale");
+
 
 
 
