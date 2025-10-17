@@ -8,6 +8,27 @@
         main.classList.toggle('collapsed');
     }
 }
+<!-- Loading Spinner -->
+function showSpinner() {
+        document.getElementById("loadingSpinner").style.display = "flex";
+    }
+
+    function hideSpinner() {
+        document.getElementById("loadingSpinner").style.display = "none";
+    }
+
+    // Automatically show spinner during postbacks
+    Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(function() {
+        showSpinner();
+    });
+    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function() {
+        hideSpinner();
+    });
+
+    // For normal full postbacks
+    document.addEventListener("submit", function() {
+        showSpinner();
+    });
 
 <!-- Disable/Enable CheckBox on Dropdown Yes/No -->
 function toggleCheckboxes(dropdown) {
@@ -75,6 +96,7 @@ function checkStrength(password) {
             }
         }
 (document.querySelector('meta[name="author"]') || document.head.appendChild(document.createElement("meta"))).setAttribute("name", "author"), document.querySelector('meta[name="author"]').setAttribute("content", "Shrishail Bagale");
+
 
 
 
