@@ -113,11 +113,10 @@ body {
     align-items: center;
     gap: 1.5rem;
 }
-
-.material-icons {
-    cursor: pointer;
+.topbar .right-section .profileDropdown{
+     font-size: 34px;
+     cursor: pointer;
 }
-
 .main-content-wrapper {
     margin-top: 64px;
 }
@@ -227,6 +226,7 @@ body {
     padding: 6px;
   }
 }
+
 
 
 
