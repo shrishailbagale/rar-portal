@@ -84,9 +84,8 @@ body {
     min-height: 64px;
     top: 0;
     left: 0;
-    width: 100%;
-    background: linear-gradient(to right, #000c4f, #11b6e5);
-    /* background-color: #2962ff; */
+    width: 100%;    
+    background-color: #2962ff;
     color: white;
     padding: 0.75rem 1.5rem;
     display: flex;
@@ -227,6 +226,7 @@ body {
     padding: 6px;
   }
 }
+
 
 
 
