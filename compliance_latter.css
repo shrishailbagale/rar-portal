@@ -1,0 +1,105 @@
+body {
+font-family: 'Mangal', 'Nirmala UI', sans-serif;
+font-size: 14px;
+line-height: 1.6;
+margin: 0;
+}
+
+.container {
+width: 210mm;
+min-height: 297mm;
+margin: auto;
+}
+
+.header-table {
+width: 100%;
+border: 2px solid #000;
+border-collapse: collapse;
+}
+
+.header-table td {
+vertical-align: middle;
+padding: 10px;
+}
+
+.logo-cell {
+width: 15%;
+text-align: center;
+}
+
+.logo {
+width: 60px;
+}
+
+.header-text {
+width: 70%;
+text-align: center;
+font-weight: bold;
+}
+
+.header-text h2 {
+margin: 0;
+font-size: 20px;
+font-weight: 700;
+}
+
+.header-text p {
+margin: 3px 0;
+font-size: 14px;
+}
+
+.right {
+text-align: right;
+}
+
+.latter-body{
+margin: 25px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+margin-bottom: 15px;
+}
+
+.table, .table th, .table td {
+border: 1px solid black;
+}
+
+th, td {
+padding: 6px;
+text-align: left;
+}
+.w-vibhag{
+width:30%;
+}
+
+.w-psname{
+width:30%;
+}
+
+.no-border {
+border: none !important;
+}
+
+.signature {
+margin-top: 40px;
+text-align: right;
+}
+
+.signature img{
+width:auto;
+height:60px;
+}
+
+.small {
+font-size: 13px;
+}
+.water-mark{
+position:fixed;
+top:10%; left:40%;
+transform:translate(-50%, -50%);
+opacity:0.06; z-index:0;
+pointer-events:none;
+}
