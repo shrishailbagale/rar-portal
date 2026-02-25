@@ -105,3 +105,7 @@ opacity:0.02;
 z-index:0;
 pointer-events:none;
 }
+.water-mark h1{
+  font-size:30px;
+  font-weight:700;
+}
