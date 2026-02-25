@@ -100,6 +100,7 @@ font-size: 13px;
 position:fixed;
 top:10%; left:40%;
 transform:translate(-50%, -50%);
-opacity:0.06; z-index:0;
+opacity:0.03; 
+z-index:0;
 pointer-events:none;
 }
