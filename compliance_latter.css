@@ -81,6 +81,7 @@ width:30%;
 
 .no-border {
 border: none !important;
+  padding-top: -10px
 }
 
 .signature {
