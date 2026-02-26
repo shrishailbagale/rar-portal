@@ -86,13 +86,13 @@ th, td {
 
 .signature {
   margin-top: 40px;
-  text-align: right;
-  opacity: 0.02;  
+  text-align: right;    
 }
 
 .signature img{
   width:auto;
   height:60px;
+  opacity: 0.02;
 }
 
 .small {
