@@ -85,8 +85,9 @@ border: none !important;
 }
 
 .signature {
-margin-top: 40px;
-text-align: right;
+  margin-top: 40px;
+  text-align: right;
+  opacity: 0.02;  
 }
 
 .signature img{
