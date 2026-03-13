@@ -60,13 +60,14 @@ body {
     align-items: center;
     margin-bottom: 3px;
     /* gap: 0.75rem; */
-    border-radius: 0.375rem;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
 .sidebar .nav-link.active,
 .sidebar .nav-link:hover {
-    background-color: #e8edfb;
-    color: #e21709;
+    background-color: linear-gradient(90deg,#6366f1,#06b6d4);
+    color: #111;
 }
 
 .main {
@@ -227,6 +228,7 @@ body {
     padding: 6px;
   }
 }
+
 
 
 
