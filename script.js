@@ -95,6 +95,17 @@ function checkStrength(password) {
                     break;
             }
         }
+
+<!-- Popup open and close -->
+function openPopup() {
+            document.getElementById("popupOverlay").style.display = "block";
+            document.getElementById("attachPopup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popupOverlay").style.display = "none";
+            document.getElementById("attachPopup").style.display = "none";
+        }
 (document.querySelector('meta[name="author"]') || document.head.appendChild(document.createElement("meta"))).setAttribute("name", "author"), document.querySelector('meta[name="author"]').setAttribute("content", "Shrishail Bagale");
 
 
