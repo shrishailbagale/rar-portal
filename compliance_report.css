@@ -1,0 +1,13 @@
+body { font-family: Mangal; } table { width:100%; border-collapse:collapse; } th, td { border:1px solid black; padding:6px; } th { text-align:left; } .heading th { font-size:16; font-weight:bold; } .title { padding: 0; margin:0; text-align:center; font-size: 24px; font-weight:bold; } .sub-title { text-align:center; font-size: 18px; font-weight:bold; } .date { width: 10%;} .district { width: 12%; }
+        .office-type{ width: 9%; } .region-header { background-color: #d9d9d9; font-weight: bold; font-size: 15px; } .region-header h4 { padding:0; margin:0 } .section-name{ width: 12%; } thead { display: table-header-group; } tfoot { display: table-footer-group; } tr { page-break-inside: avoid; } .water-mark{
+  position:fixed;
+  top:10%; left:40%;
+  transform:translate(-50%, -50%);
+  opacity:0.02; 
+  z-index:0;
+  pointer-events:none;
+}
+.water-mark h1{
+  font-size:30px;
+  font-weight:700;
+}
