@@ -1,0 +1,41 @@
+body {    
+    font-family: 'Mangal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 30px;
+}
+
+/* .chapter-title -> ._x1 */
+._x1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* .heading -> ._x2 */
+._x2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+}
+
+/* .details -> ._x3 */
+._x3 {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* .water-mark -> ._x4 */
+._x4 {
+    font-size: 30px;
+    font-weight: 700;
+    position: fixed;
+    right: 20px;
+    z-index: 9999;
+    opacity: 0.01;
+    pointer-events: none;
+    overflow: hidden;
+}
