@@ -25,7 +25,8 @@ body {
 /* .details -> ._x3 */
 ._x3, p{
     text-align: justify;
-    margin-bottom: 11pt;
+    margin-bottom: 15px;
+    font-size:11pt;
 }
 
 /* .water-mark -> ._x4 */
