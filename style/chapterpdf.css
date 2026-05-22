@@ -6,7 +6,7 @@ body {
 }
 
 /* .chapter-title -> ._x1 */
-._x1 {
+._x1, h1 {
     text-align: center;
     font-size: 16pt;
     font-weight: bold;
@@ -14,7 +14,7 @@ body {
 }
 
 /* .heading -> ._x2 */
-._x2 {
+._x2, h3 {
     font-size: 12pt;
     font-weight: bold;
     margin-top: 25px;
@@ -23,7 +23,7 @@ body {
 }
 
 /* .details -> ._x3 */
-._x3 {
+._x3, p{
     text-align: justify;
     margin-bottom: 11pt;
 }
