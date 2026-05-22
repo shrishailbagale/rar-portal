@@ -23,9 +23,11 @@ body {
 }
 
 /* .details -> ._x3 */
-._x3, p{
+._x3{
     text-align: justify;
     margin-bottom: 15px;
+}
+p,th,td{    
     font-size:11pt;
 }
 
