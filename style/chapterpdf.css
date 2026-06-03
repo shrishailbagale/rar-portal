@@ -1,104 +1,46 @@
-
-@media print {
-    @page {
-        size: A4;
-        margin: 20mm 15mm 20mm 15mm; /* Balanced printable area margins */
-    }
-}
-
 body {    
     font-family: 'Mangal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 11pt; /* Marginally adjusted for better readability */
+    font-size: 11pt;
     line-height: 1.6;
     margin: 0;
-    color: #333;
 }
 
-/* Intelligent Section Page-Breaking Rules */
-.report-section {
-    /* Prevents a heading from separating from its content block if it falls at the bottom 4-5 lines */
-    break-inside: avoid; 
-    page-break-inside: avoid; 
-    margin-bottom: 20px;
-}
-
-/* Proper Line Breaking and Justification Choice */
-._x3 {
-    text-align: justify;
-    text-justify: inter-word;
-    word-wrap: break-word;      /* Ensures long words do not break layout boundaries */
-    word-break: break-word;     /* Standardized hyphenation and breaking */
-    margin-bottom: 15px;
-}
-
-/* Headings Configuration */
+/* .chapter-title -> ._x1 */
 ._x1, h1 {
     text-align: center;
-    font-size: 16pt;
+    font-size: 14pt;
     font-weight: bold;
     margin-bottom: 30px;
-    page-break-after: avoid; /* Title stays with the content */
-    break-after: avoid;
 }
 
-._x2, h2 {
-    font-size: 12pt;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 5px;
-    background-color: #f2f2f2;
-    page-break-after: avoid; /* Never orphan a heading row */
-    break-after: avoid;
-}
-
-/* Table Multi-page Handling Rules */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 15px 0;
-    font-size: 10pt;
-    page-break-inside: auto; /* Allow tables to split naturally over pages */
-}
-
-tr {
-    page-break-inside: avoid; /* Prevent an individual row from splitting in half */
-    break-inside: avoid;
-}
-
-thead {
-    display: table-header-group; /* Automatically repeats headers if tables exceed 30+ rows across pages */
-}
-
-tfoot {
-    display: table-footer-group;
-}
-
-th, td {    
-    font-size: 10pt;
-    padding: 6px 8px;
-    border: 1px solid #ccc;
-    text-align: left;
-    word-break: normal; /* Prevents awkward single Marathi character breakages in tables */
-}
-
-/* Footer / Tip styling */
-.pdf-tip {
-    font-size: 9.5pt;
+/* .heading -> ._x2 */
+._x2, h3 {
+    font-size: 11pt;
     font-weight: bold;
     margin-top: 25px;
-    padding-top: 10px;
-    border-top: 1px dashed #999;
-    break-inside: avoid;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
 }
 
-/* Watermark adjustments */
+/* .details -> ._x3 */
+._x3{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+p,th,td{    
+    font-size:10pt;
+}
+
+/* .water-mark -> ._x4 */
 ._x4 {
     font-size: 30px;
     font-weight: 700;
     position: fixed;
     right: 20px;
     z-index: 9999;
-    opacity: 0.05; /* Slightly increased visibility to be visible but discreet */
+    opacity: 0.01;
     pointer-events: none;
+    overflow: hidden;
 }
+
+
