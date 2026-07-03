@@ -8,14 +8,14 @@ body {
 /* .chapter-title -> ._x1 */
 ._x1, h1 {
     text-align: center;
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
 /* .heading -> ._x2 */
 ._x2, h3 {
-    font-size: 11pt;
+    font-size: 12pt;
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 10px;
@@ -28,7 +28,7 @@ body {
     margin-bottom: 15px;
 }
 p,th,td{    
-    font-size:10pt;
+    font-size:11pt;
 }
 
 /* .water-mark -> ._x4 */
@@ -41,6 +41,9 @@ p,th,td{
     opacity: 0.01;
     pointer-events: none;
     overflow: hidden;
+}
+.auto-pagebreak {
+    display:none !important;
 }
 
 
