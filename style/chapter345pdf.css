@@ -1,0 +1,66 @@
+body { 
+        font-family: 'Mangal', 'Arial Unicode MS', sans-serif; 
+        font-size: 11pt; 
+        line-height: 1.6; 
+        padding: 10mm; 
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297"><text x="105" y="150" transform="rotate(-45 105 150)" font-size="18" fill="rgba(220,220,220,0.15)" font-family="Arial" font-weight="bold" text-anchor="middle" dominant-baseline="middle">SHRISHAIL BAGALE</text></svg>'); 
+        background-size: 210mm 297mm; 
+        background-repeat: repeat; 
+        background-position: center;
+    }
+
+    .chapter-title { 
+        text-align: center; 
+        font-size: 16pt; 
+        font-weight: bold; 
+        margin-bottom: 0px; 
+        border: 1px solid #000; 
+        border-bottom: 0px !important; 
+        padding: 5px; 
+    }
+
+    .section-title { 
+        text-align: center; 
+        font-size: 14pt; 
+        font-weight: bold; 
+        margin-top: 0px; 
+        margin-bottom: 20px; 
+        color: #000; 
+        border: 1px solid #000; 
+        padding: 5px; 
+    }
+
+    .para-heading { 
+        font-weight: bold; 
+        font-size: 12pt; 
+        margin-top: 15px; 
+    }
+
+    .para-subheading { 
+        font-weight: bold; 
+        font-size: 11pt; 
+        color: #555; 
+        margin-bottom: 10px; 
+    }
+
+    .para-text { 
+        text-align: justify; 
+        margin-bottom: 20px; 
+    }
+
+    /* .collapsed-row tr.page-break-row td {
+        border-bottom: 1px solid black !important; 
+        font-size: 8pt;
+    } */
+
+    /* Force page break for wkhtmltopdf */
+    .a4-sheet { 
+        page-break-after: always; 
+        break-after: page; 
+        padding-bottom: 20px; 
+    }
+
+    .a4-sheet:last-child { 
+        page-break-after: auto; 
+        break-after: auto; 
+    }
