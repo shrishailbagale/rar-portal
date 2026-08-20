@@ -64,3 +64,14 @@ body {
         page-break-after: auto; 
         break-after: auto; 
     }
+
+.annexure-wrapper { width: 100%; }
+.annexure-heading { text-align: center; font-weight: bold; font-size: 18px; margin-bottom: 20px; }
+.annexure-heading h3 { margin: 0 0 5px 0; }
+.annexure-table { width: 100%; border-collapse: collapse; }
+.annexure-table th, .annexure-table td { border: 1px solid #000; padding: 5px; }
+.annexure-header-row { background-color: #ffffff; text-align: center; font-weight: bold; }
+.annexure-header-row-white {{ background-color: #ffffff; text-align: center; font-weight: bold; }
+.annexure-data-row { text-align: left; vertical-align: top; }
+.annexure-word-break { word-break: break-all; text-align: left; vertical-align: top; }
+.annexure-no-data { text-align: center; color: #ff0000; }
